@@ -1,0 +1,39 @@
+@import url(https://fonts.googleapis.com/css?family=Hind:700);
+
+body {
+	font-family: 'Hind', sans-serif;
+	font-size: 400%;
+	color: #000;
+	background: #fff;
+	text-align: center;
+}
+
+span {
+	color: transparent;
+	animation: blur 10s ease-out infinite;
+	-webkit-animation: blur 10s ease-out infinite;
+}
+
+span:nth-child(1) {
+	animation-delay: 0.1s;
+	-webkit-animation-delay: 0.1s;
+}
+span:nth-child(2) {
+	animation-delay: 0.2s;
+	-webkit-animation-delay: 0.2s;
+}
+span:nth-child(3) {
+	animation-delay: 0.9s;
+	-webkit-animation-delay: 0.9s;
+}
+
+@keyframes blur {
+	0%		{text-shadow:  0 0 100px #000; opacity:0;}
+	5%		{text-shadow:  0 0 90px #000;}
+	15%		{opacity: 1;}
+	20%		{text-shadow:  0 0 0px #000;}
+	80%		{text-shadow:  0 0 0px #000;}
+	85%		{opacity: 1;}
+	95%		{text-shadow:  0 0 90px #000;}
+	100%	{text-shadow:  0 0 100px #000; opacity:0;}
+}
